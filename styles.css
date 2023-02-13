@@ -47,5 +47,17 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-
+}
+#name{
+    padding: 0.5rem;
+}
+#email{
+    padding: 0.5rem;
+}
+#number{
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+.form-control{
+    padding: 0.5rem;
 }
