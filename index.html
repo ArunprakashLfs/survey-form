@@ -9,15 +9,15 @@
 </head>
 <body>
     <h1 id="title">SURVEY FORM</h1>
-    <p id="description"> The land survey form</p>
+    <p id="description"> The Coiurse survey form</p>
     <form id="survey-form">
         <label id="name-label" type="text">name</label><br>
         <input id="name" placeholder="name" required><br>
         <label id="email-label">email</label><br>
-        <input id="email" placeholder="email" required><br>
+        <input id="email"  type="email"placeholder="email" required><br>
         <label id="number-label" >age</label><br>
-        <input id="number" min="18" max="80" placeholder="age" required><br>
-        <select id="dropdown" name="role" class="form-control" required="">
+        <input id="number" type="number" min="18" max="80" placeholder="age" required><br>
+        <select id="dropdown" name="role" class="form-control" required=""><br>
             <option disabled="" selected="" value="">Select Gender</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
@@ -25,24 +25,39 @@
         </select><br>
         <div class="work-type">
             <p>select your work work-type</p>
-            <input type="radio" id="parttime" value="parttime">
-            <label for="parttime">PartTime </label>
-            <input type="radio" id="fulltime" value="fulltime">
-            <label for="fulltime">FullTime</label>
-            <input type="radio" id="weekend" value="weekend">
-            <label for="weekend">Weekend</label>
+            <label for="parttime">
+                <input name="work-type" type="radio" id="parttime" value="parttime">
+                PartTime 
+            </label>
+            <label for="fulltime">
+                <input name="work-type" type="radio" id="fulltime" value="fulltime">
+                FullTime
+            </label>
+            <label for="weekend">
+                <input name="work-type" type="radio" id="weekend" value="weekend">
+                Weekend
+            </label>
         </div><br>
         <div class="course">
-            <input type="checkbox" id="frontend" value="frontend">
-            <label for="frontend">FrontEnd</label>
-            <input type="checkbox" id="backend" value="backend">
-            <label for="backend">Backend</label>
-            <input type="checkbox" id="fullstack" value="fullstack">
-            <label for="fullstack">FullStack</label>
-            <input type="checkbox" id="ui/ux" value="ui/ux">
-            <label for="ui/ux">UI/UX</label>
-        </div>
-        <input type="text">
+            <p>select the following course</p>
+            <label for="frontend">
+                <input type="checkbox" id="frontend" value="frontend">
+                FrontEnd
+            </label>
+            <label for="backend">
+                <input type="checkbox" id="backend" value="backend">
+                Backend
+            </label>
+            <label for="fullstack">
+                <input type="checkbox" id="fullstack" value="fullstack">
+                FullStack
+            </label>
+            <label for="ui/ux">
+                <input type="checkbox" id="ui/ux" value="ui/ux">
+                UI/UX
+            </label>
+        </div><br>
+        <textarea name="message" placeholder="Feedback/quaires about service."></textarea><br>
         <button id="submit">submit</button>
 
     </form>
